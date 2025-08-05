@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Adivinhe o número!</h1>
+    </header>
+    <hr>
+
+    <main>
+
+        <h2>Instruções:</h2>
+
+        <p> Iremos gerar um número aleatório entre 1 e 100, e você terá que adivinhar qual é esse número. Daremos dicas
+            ,lhe informando se o número chutado é maior ou menor que o número secreto. O jogo
+            terminará se você acertar o número ou quando você atingir um número máximo de <b> dez tentativas</b>.
+            <br>
+            BOA SORTE!
+        </p>
+
+        <br>
+
+        <label for="numero">Digite um número entre 1 à 100:</label>
+        <input type="number" id="numero" name="numero" required placeholder="Número" min="1" max="100">
+        <br>
+        <button id="button" onclick="verificarPalpite()">Chutar</button>
+
+
+        <p id="informações">Informações:</p>
+        <p id="tentativas">Tentativas restantes:</p>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Rodrigo Albuquerque. Todos os direitos reservados.</p>
+        <p>Conecte-se comigo:</p>
+        <a href="">LinkedIn |</a>
+        <a href="https://github.com/rodrigoalbuq">GitHub</a>
+    </footer>
+
+</body>
+
+</html>
